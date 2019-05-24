@@ -29,10 +29,35 @@ public:
 
 	void getShapes(DynamicArray <TShape*> sh);
 
+
+
+
+
+
+//	Эти методы нужно избавить от Sleep();
+//	Сделать что-то типо конечных автоматов
+//		То есть как в lightMode2 -> горят нечетные - первое состояние,
+//									горят четные - второе состояние.
+
+// А роль Sleep() будет выполнять:
+// (140) if (WaitForSingleObject(_this->hStopEvt, 100) != WAIT_TIMEOUT) {
+//                                                /\
+//                                                ||
 	void lightMode1();
 	void lightMode2();
 	void lightMode3();
 	void lightModeOff();
+
+
+
+
+
+
+
+
+
+
+
 
 	void start();
 	void stop();
